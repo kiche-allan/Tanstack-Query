@@ -15,3 +15,11 @@ Querying Strategies: React Query provides several querying strategies such as ca
 Automatic Retry: React Query automatically retries failed queries, with exponential backoff, until the request succeeds or reaches a maximum number of retries.
 
 Advanced Features: React Query provides advanced features such as polling, pagination, and suspense support.
+
+
+
+Queries: Queries are functions that fetch data from an API endpoint. React Query provides several query functions, such as useQuery, useInfiniteQuery, and usePaginatedQuery. When a query is executed, it returns a query result, which can be in a loading, error, or success state.
+
+Mutations: Mutations are functions that modify data on the server. React Query provides a useMutation hook that handles mutations and provides an easy way to handle optimistic updates. When a mutation is executed, it returns a mutation result, which can be in a loading, error, or success state.
+
+Query Invalidations: Query invalidations are used to manage the cache and ensure that query results are always up-to-date. React Query automatically handles invalidations when a mutation is executed, but you can also manually invalidate queries using the invalidateQueries function. This function allows you to invalidate specific queries, query keys, or all queries in the cache.
